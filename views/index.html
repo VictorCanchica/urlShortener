@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>URL Shortener</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h2>Proyecto Api, Acortador de URLs</h2>
+        
+       <p>Introducimos la url que deseamos acortar, la enviamos al servidor y este responde con un json donde 
+         se encuentra la url acortada, el servidor la relaciona a la url original en la bd</p>
+        
+        <h3>Creacion de la URL </h3>
+        
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url" value="" placeholder="https://www.google.com">
+          <input type="submit" value="POST URL">
+        </form>
+        <h3>para utilizarla</h3>
+          [Este Url]/api/shorturl/[ingresa aqui el url acortado]
+        
+
+        <h3>y los redireccionara a el url original</h3>
+       
+      </div>
+      
+   </body>
+
+
+</html>
