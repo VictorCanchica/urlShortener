@@ -102,7 +102,7 @@ function FindByShortId(shortId, callback) {
 }
 
 function GenerateUniqueShortId() {
-    var candidateId = Math.floor(Math.random() * 9999999999999999999);
+    var candidateId = Math.floor(Math.random() * 99999);
     return candidateId;
 }
 
